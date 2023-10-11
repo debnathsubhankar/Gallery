@@ -34,16 +34,17 @@ const Gallery = () => {
                   </div>
                   <div className="col-12 col-md-12 col-lg-8">
                     <div className="main-titel pt-4 pb-3">
-                      <h1>Meggi</h1>
+                      <h1 className="sub_titel">Meggi</h1>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       </p>
                       <div className="d-flex justify-content-between">
-                        <h2>Price : 12</h2>
+                        <h4>Price :12</h4>
                         <a href="#">
                           <button className="btn btn-primary">Order Now</button>
                         </a>
                       </div>
+                      <p>Lorem, ipsum dolor sit amet elit.</p>
                     </div>
                   </div>
                 </div>
