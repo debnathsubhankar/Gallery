@@ -48,3 +48,5 @@ const Manu = [
     description: "This Food is cooking on sejoan noodels",
   },
 ];
+
+export default Manu;
