@@ -17,7 +17,9 @@ const Gallery = () => {
       <div className="container-fluid">
         <div className="manu-tab d-flex justify-content-around">
           <i>
-            <button className="btn btn-warning">All Item</button>
+            <button className="btn btn-warning" onClick={() => setItems(Manu)}>
+              All Item
+            </button>
           </i>
           <i>
             <button
@@ -54,10 +56,10 @@ const Gallery = () => {
                 return (
                   <div className="card col-12 col-md-12 col-lg-6 col-xl-4 my-3">
                     <div className="row">
-                      <div className="col-12 col-md-12 col-lg-4 ">
+                      <div className="col-12 col-md-12 col-lg-5 ">
                         <img src={elment.image} alt="Food_item" />
                       </div>
-                      <div className="col-12 col-md-12 col-lg-8">
+                      <div className="col-12 col-md-12 col-lg-7">
                         <div className="main-titel pt-4 pb-3">
                           <h1 className="sub_titel">{elment.name}</h1>
                           <p>{elment.description}</p>
