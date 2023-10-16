@@ -4,6 +4,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Gallery = () => {
   const [items, setItems] = useState(Manu);
+  const filterItem = (itemCeta) => {
+    const newFilterItem = Manu.filter((curEle) => {
+      return curEle.cetagory === itemCeta;
+    });
+    setItems(newFilterItem);
+  };
   return (
     <div className="container">
       <h1>My Gallery</h1>
@@ -14,13 +20,28 @@ const Gallery = () => {
             <button className="btn btn-warning">All Item</button>
           </i>
           <i>
-            <button className="btn btn-warning">Break Fast</button>
+            <button
+              className="btn btn-warning"
+              onClick={() => filterItem("breakfast")}
+            >
+              Break Fast
+            </button>
           </i>
           <i>
-            <button className="btn btn-warning">Dinner</button>
+            <button
+              className="btn btn-warning"
+              onClick={() => filterItem("dinner")}
+            >
+              Dinner
+            </button>
           </i>
           <i>
-            <button className="btn btn-warning">Lunch</button>
+            <button
+              className="btn btn-warning"
+              onClick={() => filterItem("lunch")}
+            >
+              Lunch
+            </button>
           </i>
         </div>
       </div>
